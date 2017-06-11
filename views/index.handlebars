@@ -1,0 +1,40 @@
+<div class="floatleft">
+    <ol>
+        {{#each burgers}} {{#unless this.devoured}}
+        <li>
+            {{this.burger_name}}
+
+            <form action="/{{this.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="devoured" value="true">
+                <button type="submit">Devour it!</button>
+            </form>
+        </li>
+        {{/unless}} {{/each}}
+    </ol>
+</div>
+
+<div class="floatleft">
+    <form class="create-update-form" action="/" method="POST">
+
+        <div class="form-group">
+            <label for="bu">Burger Name:</label>
+            <input type="text" id="bu" name="name">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div class="floatleft">
+    <ol>
+        {{#each burgers}} {{#if this.devoured}}
+        <li>
+            {{this.burger_name}}
+
+            <form action="/{{this.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="devoured" value="false">
+                <button type="submit">Buy Again!</button>
+            </form>
+        </li>
+        {{/if}} {{/each}}
+    </ol>
+</div>
