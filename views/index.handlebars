@@ -1,40 +1,56 @@
-<div class="floatleft">
-    <ol>
-        {{#each burgers}} {{#unless this.devoured}}
-        <li>
-            {{this.burger_name}}
+<div class="container">
 
-            <form action="/{{this.id}}?_method=PUT" method="POST">
-                <input type="hidden" name="devoured" value="true">
-                <button type="submit">Devour it!</button>
-            </form>
-        </li>
-        {{/unless}} {{/each}}
-    </ol>
-</div>
+    <div class="row">
+  
+        <div class="col-md-12"><h1>Burger Bliss</h1></div>
+    
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4" id="image"><img class="auth-image" src="/assets/images/burger.png" alt="Hamburger" height="230" width="290"></div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3> For You to Enjoy </h3>
+            <ol>
+                {{#each burgers}} {{#unless this.devoured}}
+                <li>
+                    {{this.burger_name}}
 
-<div class="floatleft">
-    <form class="create-update-form" action="/" method="POST">
-
-        <div class="form-group">
-            <label for="bu">Burger Name:</label>
-            <input type="text" id="bu" name="name">
+                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                        <button id="burBut" class="btn btn-default" type="submit">Devour it!</button>
+                        <input type="hidden" name="devoured" value="true">
+                    </form>
+                </li>
+                {{/unless}} {{/each}}
+            </ol>
         </div>
-        <button type="submit">Submit</button>
-    </form>
-</div>
-
-<div class="floatleft">
-    <ol>
-        {{#each burgers}} {{#if this.devoured}}
-        <li>
-            {{this.burger_name}}
-
-            <form action="/{{this.id}}?_method=PUT" method="POST">
-                <input type="hidden" name="devoured" value="false">
-                <button type="submit">Buy Again!</button>
+        <div class="col-md-4">
+            <form class="create-update-form" action="/" method="POST">
+                <h3> Name a Burger </h3>
+                <div class="form-group">
+                    <input type="text" name="name">
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
             </form>
-        </li>
-        {{/if}} {{/each}}
-    </ol>
+
+        </div>
+        <div class="col-md-4">
+            <h3> Nothing But Crumbs Left </h3>
+            <ol>
+                {{#each burgers}} {{#if this.devoured}}
+                <li>
+                    {{this.burger_name}}
+                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                        <button type="submit" class="btn btn-default" id="burBut">Buy Again!</button>
+                        <input type="hidden" name="devoured" value="false">
+
+                    </form>
+
+                </li>
+                {{/if}} {{/each}}
+            </ol>
+        </div>
+    </div>
 </div>

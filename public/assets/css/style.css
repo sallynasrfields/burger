@@ -1,7 +1,59 @@
-.floatleft {
-    float:left;
+body {
+    background-color: #f1e3a7;
+    font-family: 'Pontano Sans', sans-serif;
+    
 }
 
-#header {
-    background: grey;
+
+img {
+
+    margin: auto;
+    display:block;
+
 }
+
+.form-group {
+     margin: auto;
+    display:block;  
+    width:154px;
+  
+}
+
+button#submit {
+     margin: auto;
+    display:block;
+    margin-top:10px;
+    
+
+}
+
+li{
+    position:relative;
+    padding-bottom:20px;
+}
+#burBut{
+    position:absolute;
+    right:40px;
+    top:0px;
+ 
+}
+
+.row {
+    padding-top:50px;
+}
+
+h3,h1 {
+    text-align: center;
+}
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 60px;
+}
+
+h3 {
+ 
+}
+
+
+
+

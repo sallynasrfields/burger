@@ -11,19 +11,23 @@ router.get("/", function (req, res) {
         var hbsObject = {
             burgers: data
         };
-        console.log(hbsObject);
+
         res.render("index", hbsObject);
     });
 });
 
 router.post("/", function (req, res) {
-    burger.create([
-        "burger_name"
-    ], [
-            req.body.name
-        ], function () {
-            res.redirect("/");
-        });
+    console.log("this is the req.body.name: " + req.body.name);
+    if (req.body.name !== "") {
+        burger.create([
+            "burger_name"
+        ], [
+                req.body.name
+            ], function () {
+                res.redirect("/");
+            });
+    }
+
 });
 
 router.put("/:id", function (req, res) {
