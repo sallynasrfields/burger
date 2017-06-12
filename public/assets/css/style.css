@@ -59,11 +59,12 @@ li{
 
 h3,h1 {
     text-align: center;
-    color:#ca6b10; 
+     
 }
 h1 {
     font-family: 'Poiret One', cursive;
     font-size: 60px;
+       color:#5d707a;
 }
 h3{
     color:#ca6b10;
