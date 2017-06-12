@@ -19,7 +19,7 @@
                     {{this.burger_name}}
 
                     <form action="/{{this.id}}?_method=PUT" method="POST">
-                        <button id="burBut" class="btn btn-default" type="submit">Devour it!</button>
+                        <button id="burBut" class="btn-sm" type="submit">Devour it!</button>
                         <input type="hidden" name="devoured" value="true">
                     </form>
                 </li>
@@ -32,7 +32,7 @@
                 <div class="form-group">
                     <input type="text" name="name">
                 </div>
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <button type="submit" class=" btn-sm" id="submit">Submit</button>
             </form>
 
         </div>
@@ -43,7 +43,7 @@
                 <li>
                     {{this.burger_name}}
                     <form action="/{{this.id}}?_method=PUT" method="POST">
-                        <button type="submit" class="btn btn-default" id="burBut">Have Another</button>
+                        <button type="submit" class="btn-sm" id="burBut">Have Another</button>
                         <input type="hidden" name="devoured" value="false">
 
                     </form>
