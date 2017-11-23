@@ -3,7 +3,8 @@ body {
     font-family: 'Pontano Sans', sans-serif;  
     /*font-weight:bold;*/
     font-size:18px;
-    color:white;
+    color:#ebe7e7;
+    font-weight:500;
 }
 
 
@@ -18,9 +19,12 @@ img {
     margin: auto;
     display:block;  
     width:188px;
-    color:#e1e4aa;
-
-  
+    color:#6b6d6d;
+    font-weight:600;  
+    background:#e4cdc8;
+}
+.input-box{
+    background-color:#ebe7e7;
 }
 
 
@@ -29,10 +33,11 @@ button#submit {
     margin: auto;
     display:block;
     margin-top:10px;
-     background-color:#81afd3;
-     color:white;
-     border-radius:4px;
-     border:0px;
+    background-color:#81afd3;
+    color:#ebe7e7;
+    font-weight:600;
+    border-radius:4px;
+    border:0px;
    
     
 
@@ -46,10 +51,11 @@ li{
     position:absolute;
     right:40px;
     top:0px;
-      background-color:#81afd3;
-     color:white;
-     border-radius:4px;
-     border:0px;
+    background-color:#81afd3;
+    color:white;
+    font-weight:600;
+    border-radius:4px;
+    border:0px;
    
 
  
@@ -64,12 +70,14 @@ h3,h1 {
      
 }
 h1 {
-    font-family: 'Poiret One', cursive;
-    font-size: 60px;
-       color:white;
+    font-family: 'Boogaloo', cursive;
+    font-size: 90px;
+    color:#e4cdc8;
+    font-weight:500;
 }
 h3{
-    color:#e1e4aa;
+    color:#ebc2c2;
+    font-weight:700;
 }
 
 
