@@ -20,4 +20,4 @@ This applicantion is deployed to Heroku at the following site: https://burger-bl
 * Enter localhost:3000 on your web browser.
 
 ### Screenshot of Application
-<img class="auth-image" src="./public/assets/images/burgerbliss.png" alt="Hamburger" height="550" width="880">
+<img class="auth-image" src="./public/assets/images/burgerbliss.png" alt="Hamburger" height="519" width="880">
