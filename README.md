@@ -16,7 +16,7 @@ This applicantion is deployed to Heroku at the following site: https://burger-bl
 * Navigate the the folder, burger. 
 * Type in the command "npm install" in the Terminal. 
 * Locate and run MySQL commands under "db" folder
-* Run comman "node server.js" in your terminal
+* Run command "node server.js" in your terminal
 * Enter localhost:3000 on your web browser.
 
 ### Screenshot of Application
