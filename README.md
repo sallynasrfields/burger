@@ -1,9 +1,13 @@
 # burger
-A user interactive burger application that servers mysql requests to add,  update and display data from the database. sSimply enter the name your favorite burger, select to devour it, then review all of the burgers that you have devoured.
+A user interactive application that serves mysql requests to add,  update and display data from the database. Simply enter the name your favorite burger, select to devour it, then marvel over all of the burgers that you have devoured! :)
 
 
 ### About this app
-Single page node express app using mysql and handlebars to serve html. This application exhibits how handlebars and mySQL process requests work within a MVC model.
+This application exhibits how 
+* a node express application 
+* utilizing handlebars,
+* serving a database through MySQL object-relational mapping
+* can be used within a MVC model.
 
 This applicantion is deployed to Heroku at the following site: https://burger-bliss.herokuapp.com/
 
