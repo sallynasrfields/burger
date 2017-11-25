@@ -1,0 +1,29 @@
+{
+  "name": "burger-handlebars",
+  "version": "1.0.0",
+  "description": "Node express application using mySQL and handlebars to server html.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sallynasrfields/burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sallynasrfields/burger/issues"
+  },
+  "homepage": "https://github.com/sallynasrfields/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.13.4",
+    "morgan": "^1.8.2",
+    "mysql": "^2.13.0"
+  }
+}
