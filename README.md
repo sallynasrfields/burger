@@ -17,7 +17,7 @@ This applicantion is deployed to Heroku at the following site: https://burger-bl
 * Type in the command "npm install" in the Terminal. 
 * Locate and run MySQL commands under "db" folder
 * Run command "node server.js" in your terminal
-* Enter localhost:3000 on your web browser.
+* Enter localhost:3000 on your web browser. TEST
 
 ### Screenshot of Application
 <img class="auth-image" src="./public/assets/images/burgerbliss.png" alt="Hamburger" height="519" width="880">
